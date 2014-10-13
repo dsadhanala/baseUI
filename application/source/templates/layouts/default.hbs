@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    {{> page-meta}}
+    <!-- JS: VENDOR -->
+    <script type="text/javascript" charset="utf-8" src="{{assets}}/js/libs.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{assets}}/css/app-styles.css">
+</head>
+<body class="{{page.class}}">
+    <div class="page-wrap">
+        {{!-- header section --}}
+        {{> page-header}}
+
+        {{!-- page content --}}
+        {{> body }}
+
+        {{!-- page content --}}
+        {{> page-footer }}
+    </div>
+
+    <!-- JS: Plugins -->
+    <script type="text/javascript" charset="utf-8" src="{{assets}}/js/plugins.js" defer></script>
+    <!-- JS: site-wide -->
+    <script type="text/javascript" charset="utf-8" src="{{assets}}/js/app-scripts.js" defer></script>
+</body>
+</html>

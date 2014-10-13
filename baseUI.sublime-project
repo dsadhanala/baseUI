@@ -1,0 +1,40 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": ".",
+            "file_exclude_patterns":
+            [
+                "*.sublime-workspace",
+                "|validation-*.json"
+            ],
+            "folder_exclude_patterns":
+            [
+                "node_modules",
+                ".sass-cache",
+                "bower_components",
+                "application/build"
+            ]
+		}
+	],
+    "settings":
+    {
+        "detect_indentation": false,
+        "tab_size": 4,
+        "trim_trailing_white_space_on_save": true,
+        "ensure_newline_at_eof_on_save": true,
+        "translate_tabs_to_spaces" : true
+    },
+    "build_systems":
+    [
+        {
+            "name": "gulp",
+            "cmd": ["gulp", "--no-color"],
+            "selector": ["source.hbs", "source.scss", "source.js", "source.less", "source.jade", "source.json"],
+            "osx": {
+                "path": "/usr/local/bin"
+            },
+        }
+    ]
+}

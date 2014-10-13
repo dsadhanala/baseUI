@@ -1,0 +1,32 @@
+# Source Files #
+################
+.*/
+node_modules/
+bower_components/
+.env
+*.sublime-workspace
+*.psd
+
+# Compiled Files #
+##################
+.tmp/
+application/build/
+
+# OS Files #
+############
+.DS_Store
+
+# Log Files #
+############
+*.log
+
+# Cache Files #
+###############
+.sass-cache/
+
+# Config #
+##########
+
+# Validation #
+##############
+validation-*
