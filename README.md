@@ -17,9 +17,8 @@ Dev Build
 --
 `gulp`
 
-Production Build
+Production Build (Uglified, Optimized Images)
 --
-(Uglified, Optimized Images)
 `gulp publish`
 
 Run server form the Production build
