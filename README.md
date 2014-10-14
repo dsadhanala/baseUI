@@ -1,13 +1,13 @@
 baseUI
 ======
 
-Base UI is a base stuff which required to start a new (Front-end) project form the scratch with gulp build.
+Basic stuff which required to start working on a new (Front-end) project form the scratch with gulp build.
 
 Requirements
 --
  - Node.js >= v10.24
  - bower: `npm install -g bower`
- - grunt: `npm install -g grunt`
+ - gulp: `npm install -g gulp`
 
 Install
 --
