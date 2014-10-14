@@ -1,7 +1,7 @@
 baseUI
 ======
 
-Basic stuff which required to start working on a new (Front-end) project form the scratch with gulp build.
+All the stuff you need to create a new front-end project form the scratch. It includes handlebars HTML templating, SASS for CSS and gulp task runner for build management. 
 
 Requirements
 --
