@@ -28,6 +28,8 @@ module.exports = {
     },
 
     target: 'web',
+    //watch      : true,
+    //debug      : true,
 
     /* source map for dev server */
     devtool        : 'source-map',
@@ -44,44 +46,3 @@ module.exports = {
         'jQuery': 'jQuery'
     }
 };
-
-
-
-
-// var webpack = require('webpack'),
-//     path    = require('path'),
-//     config  = require('./config');
-//
-// // paths
-// var PATHS      = {
-//     root  : config.base.root,
-//     src   : config.base.src,
-//     dist  : config.base.dist
-// };
-//
-// // configurations
-// module.exports = {
-//     context      : PATHS.root,
-//     entry        : {
-//         app      : './source/assets/js/components.js'
-//     },
-//
-//     target       : 'web',
-//     //watch      : true,
-//     //debug      : true,
-//
-//     output       : {
-//         path     : PATHS.dist,
-//         filename : './assets/js/app-scripts.js'
-//     },
-//
-//     /* source map for dev server */
-//     devtool      : 'source-map',
-//
-//     /* globals */
-//     externals: {
-//         // require('jQuery') is external and available
-//         //  on the global var jQuery
-//         'jQuery': 'jQuery'
-//     }
-// };
