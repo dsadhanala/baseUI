@@ -1,36 +1,14 @@
 /* =============================================================================
    app-scripts.js
    ========================================================================== */
-
-/*** custom name space for jQuery and modules ***/
-window.baseJQ = window.baseJQ || {};
-window.baseJQ = $.noConflict();
-
+/*** custom name space for jQuery and application level components ***/
+var baseJQ = $.noConflict();
 var baseUI = baseUI || {};
 
-// Avoid 'console' errors in browsers that lack a console.
-(function() {
-    var method;
-    var noop = function() {};
-    var methods = [
-        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeStamp', 'trace', 'warn'
-    ];
-    var length = methods.length;
-    var console = (window.console = window.console || {});
+// setting global vars to share with other modules
+global.baseJQ = baseJQ;
+global.baseUI = baseUI;
 
-    while (length--) {
-        method = methods[length];
-
-        // Only stub undefined methods.
-        if (!console[method]) {
-            console[method] = noop;
-        }
-    }
-}());
-
-baseJQ(function($) {
-    console.log($, baseUI);
-});
+// all components
+require('components');
+require('global/initialize-modules');

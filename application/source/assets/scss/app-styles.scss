@@ -1,13 +1,27 @@
-// Base
-@import 'base/config';
-@import 'base/typography';
-@import 'base/utilities';
+// ****************************************
+// app-styles
+// ****************************************
 
-// Libs
+// variables
+@import "base/vars";
 
+// base or layout styles
+// @import "base/fonts";
+// @import "base/icons";
+@import "base/layout";
+@import "base/typography";
+@import "base/utilities";
+// @import "base/form-elements";
+// @import "base/messages";
 
-// Modules
-//@import 'modules/button';
+// libs
+@import "libs/normalize";
+// @import "libs/mixins";
+// @import "libs/media-queries";
+// @import "libs/helpers";
+// @import "libs/grid";
+// @import "libs/animation";
+// @import "libs/css-dropdown";
 
-
-// Partials
+// components
+@import "components";

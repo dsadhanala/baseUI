@@ -1,11 +1,56 @@
----
-title: "Home Page content"
-description: "Page Description"
-keywords: "Page Keywords"
-class: page-home
----
-<section class="site-body">
-    <div class="wrapper">
-        Home Page Body Content
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    {{!-- page meta --}}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="{{assets}}/img/favicon.png">
+    <title>Sitemap for your static site</title>
+    <link rel="stylesheet" href="{{assets}}/css/sitemap.css">
+</head>
+
+<body>
+    <div class="page-wrap">
+        <!-- header -->
+        <header role="banner" class="sitemap-header">
+            <div class="wrapper">
+                <div class="sitemap-logo">
+                    <a href="#" class="sitemap-logo__link">
+                        <img src="{{assets}}/img/app-logo.png" class="sitemap-logo__img" alt="logo" />
+                    </a>
+                    <h1 class="sitemap-logo__text">baseUI</h1>
+                </div>
+                <div class="sitemap-timestamp">
+                    <span class="sitemap-timestamp__label">last updated on:</span>
+                    <span class="sitemap-timestamp__time">{{timestamp}} MST</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main role="main" class="sitemap-content">
+            {{!-- sitemap will be build dynamically from this helper --}}
+            {{{buildSiteMap}}}
+
+            {{!-- Development resources section --}}
+            <section class="block-section development-resources">
+                <h2>Development Resources</h2>
+                <ul>
+                    <li><a href="styleguide.html">Style Guide</a></li>
+                </ul>
+                <div class="download"><a href="nightly/build.zip" class="btn btn__secondary">Download Source Code</a></div>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="sitemap-footer">
+            <div class="wrapper">
+                <p class="copyright">Copyright (c) 2015 baseUI, All Rights Reserved.</p>
+            </div>
+        </footer>
     </div>
-</section>
+</body>
+
+</html>

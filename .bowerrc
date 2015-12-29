@@ -1,0 +1,6 @@
+{
+    "directory": "application/source/assets/bower",
+    "analytics": false,
+    "registry": "https://bower.herokuapp.com",
+    "shorthand-resolver": "git://github.com/{{owner}}/{{package}}.git"
+}

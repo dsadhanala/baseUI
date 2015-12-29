@@ -2,31 +2,26 @@
 ################
 .*/
 node_modules/
-bower_components/
-.env
-*.sublime-workspace
-*.psd
+application/source/assets/bower/
 
 # Compiled Files #
 ##################
 .tmp/
-application/build/
+.sass-cache/
+application/build
 
-# OS Files #
+# MAC OS Files #
 ############
-.DS_Store
+*.DS_Store
+
+# WIN OS Files #
+############
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
 
 # Log Files #
 ############
 *.log
-
-# Cache Files #
-###############
-.sass-cache/
-
-# Config #
-##########
-
-# Validation #
-##############
-validation-*
