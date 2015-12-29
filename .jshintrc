@@ -1,0 +1,26 @@
+{
+    "predef": [
+        "window",
+        "document",
+
+        "describe",
+        "it",
+        "beforeEach",
+        "afterEach"
+
+        "angular",
+        "Handlebars"
+    ],
+
+    "globals": {
+        "module": false,
+        "require": false
+    },
+
+    "strict": true,
+    "sub": true,
+    "unused": false,
+    "browser": true,
+    "node": true,
+    "es3": true
+}

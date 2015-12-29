@@ -1,0 +1,67 @@
+// ****************************************
+// layout
+// ****************************************
+:root {
+	text-size-adjust: none;
+}
+html{
+    box-sizing: border-box;
+    font-size: ($base__font-size*1px);
+    text-rendering: optimizeLegibility;
+	transform-style: preserve-3d;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img,
+video{
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus{
+        text-decoration: underline;
+    }
+}
+
+b,
+strong,
+h1,h2,h3,h4,h5,h6{
+	font-weight: $font-weight__semi-bold;
+}
+
+body {
+	font-family: $base__font-family;
+	line-height: $base__line-height;
+}
+
+.page-wrap{
+    width: 100%;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.wrap{
+	padding: 0 15px;
+    max-width: 1590px;
+    margin: 0 auto;
+	transition: padding $transition__all-ease;
+}
+
+
+.page-title {
+	line-height: 1.2;
+	font-weight: $font-weight__semi-bold;
+}

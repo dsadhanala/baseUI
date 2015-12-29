@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-    {{> page-meta}}
-    <!-- JS: VENDOR -->
-    <script type="text/javascript" charset="utf-8" src="{{assets}}/js/libs.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{assets}}/css/app-styles.css">
+    {{> meta-tags }}
+    <link rel="stylesheet" href="{{assets}}/css/app-styles.css">
 </head>
-<body class="{{page.class}}">
+<body class="{{pageclass}}">
     <div class="page-wrap">
-        {{!-- header section --}}
-        {{> page-header}}
+        <!-- header -->
+        {{> header }}
 
-        {{!-- page content --}}
-        {{> body }}
-
-        {{!-- page content --}}
-        {{> page-footer }}
+        <!-- main -->
+        <main role="main" class="page-content">
+            {% body  %}
+        </main>
+        <!-- footer -->
+        {{> footer }}
     </div>
 
-    <!-- JS: Plugins -->
-    <script type="text/javascript" charset="utf-8" src="{{assets}}/js/plugins.js" defer></script>
+    <!-- JS: VENDOR -->
+    <script src="{{assets}}/js/vendor-libs.js"></script>
     <!-- JS: site-wide -->
-    <script type="text/javascript" charset="utf-8" src="{{assets}}/js/app-scripts.js" defer></script>
+    <script src="{{assets}}/js/app-scripts.js"></script>
 </body>
 </html>

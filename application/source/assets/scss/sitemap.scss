@@ -1,0 +1,189 @@
+// ****************************************
+// sitemap
+// ****************************************
+
+/**
+ * wanted to make sitemap styles independent of the project so adding only necessory styles as standalone.
+ */
+
+// reset
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    background: #fff;
+}
+
+.sitemap {
+    &-header {
+        background: #fafafa;
+        box-shadow: 1px 0 3px 0 rgba(0, 0, 0, 0.3);
+        min-height: 68px;
+        padding: 0 2%;
+    }
+
+    &-content {
+        padding: 10px 0;
+        margin: 0 auto;
+        width: 90%;
+        min-height: calc(100vh - 130px); /* 100% - header + footer */
+    }
+
+    &-footer{
+        padding: 20px 4px;
+        background-color: #f9f9f9;
+        text-align: center;
+        color: #333;
+        border-top: 1px solid #ddd;
+    }
+}
+
+.sitemap-logo,
+.sitemap-timestamp,
+.sitemap-logo__link,
+.sitemap-logo__text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sitemap-logo {
+    width: 30%;
+
+    &__img {
+        max-height: 65px;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: -10px;
+        margin-top: 7px;
+    }
+}
+
+// time stamp
+.sitemap-timestamp {
+    width: 67%;
+    text-align: right;
+
+    &__label {
+        font-size: 1.3rem;
+        display: block;
+        text-align: right;
+        color: #666;
+    }
+
+    &__time{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+// block section
+.block-section {
+    width: 100%;
+    display: inline-block;
+    letter-spacing: normal;
+    box-sizing: border-box;
+    padding: 0 40px;
+    vertical-align: top;
+    margin: 15px 0;
+
+    @media only screen and (max-width: 42.5em) {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 25px 0;
+    }
+
+    &:last-child {
+        display: block;
+        width: 100%;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #eee;
+    }
+
+    ul {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        counter-reset: item;
+
+        &:before,
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+
+    li {
+        margin: 10px 0px;
+        padding: 0px 26px 0px 50px;
+        position: relative;
+        display: inline-block;
+        width: 33%;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            counter-increment: item;
+            content: counter(item, decimal-leading-zero) ") ";
+            text-align: right;
+            width: 34px;
+            color: rgba(0, 116, 179, 0.2);
+        }
+    }
+
+    a {
+        color: #00a6ff;
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
+
+    .download {
+        margin: 20px 0 40px;
+    }
+
+    .download .btn{
+        color: white;
+        background-color: #0085c9;
+        border-color: #0085c9;
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        display: inline-block;
+    }
+
+    .development-resources{
+        margin: 80px 0;
+    }
+}
