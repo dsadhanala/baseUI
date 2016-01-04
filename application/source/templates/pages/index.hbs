@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-
 <head>
     {{!-- page meta --}}
     <meta charset="utf-8">
@@ -10,17 +9,16 @@
     <title>Sitemap for your static site</title>
     <link rel="stylesheet" href="{{assets}}/css/sitemap.css">
 </head>
-
 <body>
     <div class="page-wrap">
         <!-- header -->
         <header role="banner" class="sitemap-header">
             <div class="wrapper">
                 <div class="sitemap-logo">
-                    <a href="#" class="sitemap-logo__link">
-                        <img src="{{assets}}/img/app-logo.png" class="sitemap-logo__img" alt="logo" />
+                    <a href="index.html" class="sitemap-logo__link">
+                        <img src="{{assets}}/img/app-logo.png" class="sitemap-logo__img" alt="logo">
+                        <span class="sitemap-logo__text">baseUI</span>
                     </a>
-                    <h1 class="sitemap-logo__text">baseUI</h1>
                 </div>
                 <div class="sitemap-timestamp">
                     <span class="sitemap-timestamp__label">last updated on:</span>
@@ -31,15 +29,15 @@
 
         <!-- main -->
         <main role="main" class="sitemap-content">
-            {{!-- sitemap will be build dynamically from this helper --}}
+            <!-- dynamic sitemap will be generated based on the pages defined in "pages" folder -->
             {{{buildSiteMap}}}
 
             {{!-- Development resources section --}}
             <section class="block-section development-resources">
                 <h2>Development Resources</h2>
-                <ul>
+                <!-- <ul>
                     <li><a href="styleguide.html">Style Guide</a></li>
-                </ul>
+                </ul> -->
                 <div class="download"><a href="nightly/build.zip" class="btn btn__secondary">Download Source Code</a></div>
             </section>
         </main>

@@ -1,13 +1,16 @@
 baseUI
 ======
 
-All the stuff you need to create a new front-end project form the scratch. It includes handlebars HTML templating, SASS for CSS and gulp task runner for build management. 
+All the stuff you need to create a new front-end project from the scratch. It includes handlebars HTML templates, SASS for CSS and modularized JS. All the build management/code compilation will be handled with gulp (task runner) and webpack for JS modularity.
 
 Requirements
 --
- - Node.js >= v10.24
+ - Node.js >= v0.10
+ - git v2.6.4
+ - python v2.7.11
  - bower: `npm install -g bower`
  - gulp: `npm install -g gulp`
+ - web pack: `npm install -g webpack`
 
 Install
 --

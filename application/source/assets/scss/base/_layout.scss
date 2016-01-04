@@ -43,8 +43,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 body {
-	font-family: $base__font-family;
-	line-height: $base__line-height;
+	font: normal normal 1.4rem / 1.6 $base__font-family;
 }
 
 .page-wrap{
@@ -58,10 +57,11 @@ body {
     max-width: 1590px;
     margin: 0 auto;
 	transition: padding $transition__all-ease;
+
+
 }
 
-
-.page-title {
-	line-height: 1.2;
-	font-weight: $font-weight__semi-bold;
+.page-content {
+	padding: 2rem 0;
+	min-height: calc(100vh - 130px); /* 100% - header + footer */
 }

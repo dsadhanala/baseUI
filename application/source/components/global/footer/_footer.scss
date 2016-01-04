@@ -1,9 +1,11 @@
 // ****************************************
 // header
 // ****************************************
-.page-header {
+$footer-bg: #555;
+
+.page-footer{
+    padding: 10px 0;
     background-color: $brand__light-gray;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-    min-height: 64px;
-    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid $border-color;
 }

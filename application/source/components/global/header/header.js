@@ -5,6 +5,7 @@
 'use strict';
 
 var ns     = baseUI;
+var $      = baseJQ;
 ns.header  = ns.header || {};
 var header = ns.header;
 var element;

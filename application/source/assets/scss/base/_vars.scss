@@ -3,30 +3,20 @@
 // ****************************************
 
 // Base Font
-$base__font-family       : "OpenSans", Helvetica, Arial, sans-serif;
+$base__font-family       : "Source Sans Pro", Helvetica, Arial, sans-serif;
 $base__font-size         : 10;
 $base__line-height       : 1.4;
-$base__text-color        : #036;
-
-// Font weights
-$font-weight__light      : 300;
-$font-weight__regular    : 400;
-$font-weight__semi-bold  : 600;
-$font-weight__bold       : 700;
-
-//custom font sizes
-$font-size__normal       : 16;
-$font-size__large        : 20;
-$font-size__x-large      : 26;
+$base__text-color        : #333;
 
 // color swatches
 $base__black             : #000;
 $base__white             : #fff;
 
 // Brand
-$brand__color             : #074f6c;
+$brand__cyan             : #03a9f4;
+$brand__light-gray       : #f9f9f9;
 
-$border-color            : ;
+$border-color            : #ddd;
 $active-state-color      : ;
 $error-color             : ;
 
@@ -36,13 +26,19 @@ $visited                 : ;
 $hover                   : ;
 $active                  : ;
 
-// typography
-$body-copy               : 13;
-$h1                      : 32;
-$h2                      : 26;
-$h3                      : 2;
-$h4                      : 16;
+// Font sizes
+$body-copy               : 1.3rem;
+$h1                      : 3.2rem;
+$h2                      : 2.6rem;
+$h3                      : 2rem;
+$h4                      : 1.6rem;
 $h5                      : $body-copy;
+
+// Font weights
+$font-weight__light      : 300;
+$font-weight__regular    : 400;
+$font-weight__semi-bold  : 600;
+$font-weight__bold       : 700;
 
 // animations
 $transition__default     : cubic-bezier(0.77, 0, 0.175, 1);

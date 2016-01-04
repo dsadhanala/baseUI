@@ -30,7 +30,7 @@ html {
 
 body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     background: #fff;
 }
 
@@ -58,32 +58,50 @@ body {
     }
 }
 
+%inline-block-valing-middle{
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .sitemap-logo,
 .sitemap-timestamp,
 .sitemap-logo__link,
 .sitemap-logo__text {
-    display: inline-block;
-    vertical-align: middle;
+    @extend %inline-block-valing-middle;
 }
 
 .sitemap-logo {
     width: 30%;
 
+    &__link {
+        @extend %inline-block-valing-middle;
+
+        &,
+        &:hover,
+        &:active,
+        &:visited {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+
     &__img {
-        max-height: 65px;
+        @extend %inline-block-valing-middle;
+        max-height: 68px;
+        padding: 10px 0;
     }
 
     &__text {
-        font-size: 20px;
+        @extend %inline-block-valing-middle;
+        font-size: 1.6rem;
         font-weight: 600;
-        margin-left: -10px;
-        margin-top: 7px;
+        margin: 8px 0 0 5px;
     }
 }
 
 // time stamp
 .sitemap-timestamp {
-    width: 67%;
+    width: 69%;
     text-align: right;
 
     &__label {
@@ -123,7 +141,7 @@ body {
 
     h2 {
         margin: 0;
-        font-size: 20px;
+        font-size: 1.8rem;
         font-weight: 400;
         margin-bottom: 10px;
         padding-bottom: 5px;

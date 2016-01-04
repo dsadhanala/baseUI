@@ -1,0 +1,40 @@
+// ****************************************
+// mixins
+// ****************************************
+
+/**
+ * Dropdown animation
+ */
+// hide
+@mixin drop-down__hide($extend: 'extend') {
+    @if ($extend == 'no-extend') {
+        backface-visibility: hidden;
+        transform: scale(0);
+        opacity: 0;
+        transition: all 0.3s $transition__default;
+        visibility: hidden;
+    } @else {
+        @extend %drop-down__hide;
+    }
+}
+
+// show
+@mixin drop-down__show($extend: 'extend') {
+    @if ($extend == 'no-extend') {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+    } @else {
+        @extend %drop-down__show;
+    }
+}
+
+// extend for hide
+%drop-down__hide {
+    @include drop-down__hide('no-extend');
+}
+
+// extend for show
+%drop-down__show {
+    @include drop-down__show('no-extend');
+}
