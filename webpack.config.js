@@ -1,6 +1,5 @@
 /*
-*  Webpack build manager
-*  Author: Durga Prasad Sadhanala
+*  Webpack build manager configurations
 */
 
 'use strict';
@@ -41,8 +40,7 @@ module.exports = {
 
     /* globals */
     externals: {
-        // require('jQuery') is external and available
-        //  on the global var jQuery
+        // require('jQuery') is external and available as global
         'jQuery': 'jQuery'
     }
 };

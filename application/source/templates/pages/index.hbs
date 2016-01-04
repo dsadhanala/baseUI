@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-
 <head>
     {{!-- page meta --}}
     <meta charset="utf-8">
@@ -10,7 +9,6 @@
     <title>Sitemap for your static site</title>
     <link rel="stylesheet" href="{{assets}}/css/sitemap.css">
 </head>
-
 <body>
     <div class="page-wrap">
         <!-- header -->
@@ -31,7 +29,7 @@
 
         <!-- main -->
         <main role="main" class="sitemap-content">
-            {{!-- sitemap will be build dynamically from this helper --}}
+            <!-- dynamic sitemap will be generated based on the pages defined in "pages" folder -->
             {{{buildSiteMap}}}
 
             {{!-- Development resources section --}}
