@@ -1,30 +1,18 @@
-
-/**
- *  variables
- */
-@import "base/vars";
-
+// bower imports
 @import "../bower/normalize-scss/normalize.scss";
 
-/**
- *  libs
- */
-//@import "libs/grid";
+// variables
+@import "base/vars";
+
+// libs
 @import "libs/mixins";
-//@import "libs/media-queries";
+
+// application level base styles
 @import "base/fonts";
-
-
-/**
- *  base or layout styles
- */
 @import "base/layout";
 @import "base/typography";
 
-
-/**
- *  components
- */
+// components or partials
 @import "components";
 
 // helpers

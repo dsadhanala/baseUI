@@ -1,0 +1,29 @@
+// ****************************************
+// app-logo
+// ****************************************
+.app-logo {
+    &__link {
+        @extend %inline-block-valing-middle;
+
+        &,
+        &:hover,
+        &:active,
+        &:focus,
+        &:visited {
+            color: $base__text-color;
+            text-decoration: none;
+        }
+    }
+
+    &__img {
+        @extend %inline-block-valing-middle;
+        max-height: 44px;
+    }
+
+    &__text {
+        @extend %inline-block-valing-middle;
+        font-size: 1.6rem;
+        font-weight: $font-weight__semi-bold;
+        margin: 8px 0 0 5px;
+    }
+}

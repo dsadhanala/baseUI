@@ -1,5 +1,12 @@
-/* typography */
-h1{
-    font-size: 20px;
-    line-height: normal;
+// ****************************************
+// typography
+// ****************************************
+
+.page-title{
+    font-size: $h1;
+    line-height: 1.2;
+    font-weight: $font-weight__light;
+    padding-bottom: 0.4rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $border-color;
 }
